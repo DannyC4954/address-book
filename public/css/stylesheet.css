@@ -1,0 +1,301 @@
+/* All styling */
+* { margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 8%;
+  background: #19365e;
+  color: #fff;
+  width: 84%;
+}
+/* .nav-scroll {
+  position: fixed!important;
+} */
+.nav-part {
+  display: inline-block;
+  width: 30%;
+}
+.search-con {
+  width: 80%;
+  margin: 2% auto;
+  /* text-align: center; */
+  /* margin-top: 10px; */
+}
+.search-ip {
+  width: 45%;
+  padding: 15px;
+  border-radius: 5px;
+  border-style: none;
+  background: #e8e8e8;
+  margin-right: 1%;
+}
+.search-sb {
+  display: inline-block;
+  width: 15%;
+  padding: 15px;
+  border-radius: 5px;
+  border-style: none;
+  background: #276ccc;
+  color: #fff;
+  margin-right: 1%;
+}
+.logo {
+  font-size: 2em;
+  margin: 2% 4%;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-option {
+  font-size: 1.2em;
+  margin: 2% 4%;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation - Responsive */
+.side-bar {
+  top: 0;
+  right: 0;
+  display: none;
+  background: #19365e;
+  height: 100%;
+  width: 100%;
+}
+.exit {
+  text-align: right;
+  /* margin: 5%; */
+}
+.options {
+  padding: 2%;
+  text-align: center;
+}
+.side-bar a {
+  display: block;
+  color: #fff;
+  font-size: 1.6em;
+  margin: 5% auto;
+  text-decoration: none;
+  color: #fff;
+}
+.close-icon {
+  filter: invert();
+  width: 35px;
+  height: 35px;
+  margin: 25px;
+}
+.close-icon:hover {
+  cursor: pointer;
+}
+
+/* Helpers */
+.mt-2 {
+  margin-top: 10px;
+}
+.right {
+  text-align: right;
+}
+.st-icon {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+.menu {
+  display: none;
+  filter: invert();
+}
+.red {
+  color: #e60000;
+}
+.red-bck {
+  background: #e60000!important;
+}
+.pt-50 {
+  padding-top: 50px!important;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+/* Home */
+.address-book {
+  width: 75%;
+  margin: auto;
+}
+/* .ind-record {
+
+} */
+.top-row {
+  display: flex;
+  padding: 10px 15px;
+}
+.row-title {
+  display: inline-block;
+  width: 100%;
+}
+.record-row {
+  display: flex;
+  padding: 10px 15px;
+  margin: 2% 0%;
+}
+.record {
+  display: inline-block;
+  width: 100%;
+}
+.hidden-ip {
+  display: none;
+  visibility: hidden;
+}
+.action-btn {
+  display: inline-block;
+  margin-right: 5px;  
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+  background: #FF8C00;
+  color: #fff;
+  border-style: none;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 3%;
+}
+.action-btn:hover {
+  cursor: pointer;
+}
+
+/* Table styling */
+table { 
+  margin: 2% auto;
+  width: 80%; 
+  border-collapse: collapse;
+}
+/* Zebra striping */
+/* tr:nth-of-type(odd) { 
+  background: #eee; 
+} */
+th { 
+  background: #19365e; 
+  color: #fff; 
+  font-weight: bold; 
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #ccc; 
+  font-size: 1.3em;
+}
+td { 
+  padding: 25px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+/* Adding a record */
+.form-con {
+  width: 50%;
+  padding: 3%;
+  margin: auto;
+}
+.form-title {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 1.8em;
+}
+.record-lb {
+  margin: 20px 0 20px 0;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.record-ip {
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  background: #e8e8e8;
+  border-style: none;
+}
+.record-sb {
+  display: block;
+  margin: 30px 0 0 0;
+  padding: 15px;
+  border-radius: 5px;
+  /* width: 10%; */
+  background: #276ccc;
+  color: #fff;
+  border-style: none;
+  font-size: 1em;
+}
+.record-sb:hover {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  /* Navigation */
+  .nav {
+    padding: 5% 10%;
+    width: 80%;
+  }
+  .nav-part {
+    width: 60%;
+  }
+  .nav-option {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .logo {
+    font-size: 1.3em;
+  }
+  .search-con {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .search-ip {
+    margin-top: 10px;
+    display: block;
+    width: 90%;
+  }
+  .search-sb {
+    margin-top: 10px;
+    display: block;
+    width: 50%;
+  }
+  .form-con {
+    width: 82%;
+    margin: 1%;
+  }
+
+  /* Helpers */
+  .mt-2 {
+    margin: unset!important;
+  }
+
+  /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; margin: 25px 0%; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		/* position: relative; */
+	}
+
+}
