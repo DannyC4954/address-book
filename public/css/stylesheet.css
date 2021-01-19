@@ -7,7 +7,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 2% 8%;
+  padding: 3% 8%;
   background: #19365e;
   color: #fff;
   width: 84%;
@@ -93,6 +93,28 @@
   cursor: pointer;
 }
 
+/* Error modal */
+.error-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.error-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 3%;
+  border: 1px solid #888;
+  width: 35%;
+}
+
 /* Helpers */
 .mt-2 {
   margin-top: 10px;
@@ -121,32 +143,11 @@
 .pb-20 {
   padding-bottom: 20px;
 }
+.pb-50 {
+  padding-bottom: 50px;
+}
 
 /* Home */
-.address-book {
-  width: 75%;
-  margin: auto;
-}
-/* .ind-record {
-
-} */
-.top-row {
-  display: flex;
-  padding: 10px 15px;
-}
-.row-title {
-  display: inline-block;
-  width: 100%;
-}
-.record-row {
-  display: flex;
-  padding: 10px 15px;
-  margin: 2% 0%;
-}
-.record {
-  display: inline-block;
-  width: 100%;
-}
 .hidden-ip {
   display: none;
   visibility: hidden;
@@ -168,6 +169,10 @@
 .action-btn:hover {
   cursor: pointer;
 }
+.main-form-con {
+  margin: 5% auto;
+  width: 80%; 
+}
 
 /* Table styling */
 table { 
@@ -175,10 +180,6 @@ table {
   width: 80%; 
   border-collapse: collapse;
 }
-/* Zebra striping */
-/* tr:nth-of-type(odd) { 
-  background: #eee; 
-} */
 th { 
   background: #19365e; 
   color: #fff; 
@@ -196,7 +197,7 @@ td {
 
 /* Adding a record */
 .form-con {
-  width: 50%;
+  width: 40%;
   padding: 3%;
   margin: auto;
 }
@@ -210,6 +211,14 @@ td {
   display: block;
   font-weight: bold;
   font-size: 1.2em;
+}
+.main-record-ip {
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  width: 35%;
+  background: #e8e8e8;
+  border-style: none;
 }
 .record-ip {
   display: block;
@@ -262,14 +271,27 @@ td {
     display: block;
     width: 90%;
   }
-  .search-sb {
-    margin-top: 10px;
+  .search-sb, .record-sb {
+    margin-top: 30px;
     display: block;
     width: 50%;
   }
   .form-con {
     width: 82%;
     margin: 1%;
+  }
+  .main-form-con {
+    margin: 10% auto;
+  }
+ .record {
+  width: 95%;
+ }
+ .main-record-ip {
+    width: 90%;
+  }
+  .error-content {
+    padding: 15px;
+    width: 85%;
   }
 
   /* Helpers */

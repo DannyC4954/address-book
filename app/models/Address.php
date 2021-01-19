@@ -2,6 +2,7 @@
 
     class Address {
 
+        // Load still being used to show address book on index page
         public function loadRecords(){
             // Add data to JSON file
             $fileData = file_get_contents( '../app/results.json' );
@@ -12,6 +13,7 @@
             return $jsonArray;
         }
 
+        // Search still being used to search records on index page
         public function searchRecords(){
             if( isset( $_POST["search-address"] ) ){
                 // Get data from JSON file
@@ -26,6 +28,7 @@
 
         }
 
+        // Original functions for PHP CRUD
         public function validation(){
             if( isset( $_POST["add-record"] ) ){
                 
@@ -123,6 +126,7 @@
             }
         }
 
+        // View still being used to edit records
         public function viewRecord(){
             if( isset( $_GET["email"] ) ) {
                 // Get data from JSON file
