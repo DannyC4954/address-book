@@ -1,5 +1,5 @@
 # address-book
-Address book application for techinal test.
+Address book application for technical test.
 
 Set up
 Go to app/config/config.php and change the URLROOT to the server you are using.
