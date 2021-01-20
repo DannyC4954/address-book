@@ -42,6 +42,7 @@
   background: #276ccc;
   color: #fff;
   margin-right: 1%;
+  -webkit-appearance: none;
 }
 .logo {
   font-size: 2em;
@@ -238,6 +239,7 @@ td {
   color: #fff;
   border-style: none;
   font-size: 1em;
+  -webkit-appearance: none;
 }
 .record-sb:hover {
   cursor: pointer;

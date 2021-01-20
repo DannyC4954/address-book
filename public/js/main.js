@@ -50,7 +50,7 @@ $(document).ready(function(){
         type: type,
         data: data,
         success: function(response) {
-          $( "tbody" ).append( "<tr><td>"+ data["first_name"] +" "+ data["last_name"] +"</td><td>"+ data["phone"] +"</td><td>"+ data["email"] +"</td><td><a class=\"action-btn\" href=\"./add?email="+ data["email"] +"\">Edit</a><label for=\"delete-"+ data["email"] +"\" class=\"action-btn red-bck\">Delete</label><form class=\"ajax-delete\" action=\"/address-book/ajaxdelete\" method=\"POST\"><input type=\"hidden\" name=\"delete-ID\" value=\""+ data["email"] +"\" /><input type=\"submit\" id=\"delete-"+ data["email"] +"\" class=\"hidden-ip\" name=\"delete-record\" /></form></td></tr>" );
+          $( "tbody" ).append( "<tr><td>"+ data["first_name"] +" "+ data["last_name"] +"</td><td>"+ data["phone"] +"</td><td>"+ data["email"] +"</td><td><a class=\"action-btn\" href=\"./add?email="+ data["email"] +"\">Edit</a><label for=\"delete-"+ data["email"] +"\" class=\"action-btn red-bck\">Delete</label><form class=\"ajax-delete\" action=\"/address-book/home/ajaxdelete\" method=\"POST\"><input type=\"hidden\" name=\"delete-ID\" value=\""+ data["email"] +"\" /><input type=\"submit\" id=\"delete-"+ data["email"] +"\" class=\"hidden-ip\" name=\"delete-record\" /></form></td></tr>" );
           $('#ajax-form')[0].reset();
         }
       });
